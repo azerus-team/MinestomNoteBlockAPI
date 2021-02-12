@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.azerusteam.api.noteblock'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spongepowered.org/maven' }
+    maven { url 'https://libraries.minecraft.net' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'com.github.Minestom:Minestom:04c792c302'
+}
+
+test {
+    useJUnitPlatform()
+
+}
